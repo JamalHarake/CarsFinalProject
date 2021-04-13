@@ -1,4 +1,4 @@
-package com.cst2335.teamproject;
+package carsbyjamal;
 
 import android.app.Activity;
 import android.content.Context;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public final boolean onNavigationItemSelected(@NotNull MenuItem it) {
                 switch(it.getItemId()) {
                     case R.id.nav_item_database:
-                        com.cst2335.teamproject.MainActivity.this.goToCarDatabase();
+                        MainActivity.this.goToCarDatabase();
                     default:
                         drawer.closeDrawer(GravityCompat.START);
                         return true;
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private final void goToCarDatabase() {
-        Intent goToCarDatabase = new Intent((Context)this, com.cst2335.teamproject.HomePage.class);
+        Intent goToCarDatabase = new Intent((Context)this, HomePage.class);
         this.startActivity(goToCarDatabase);
     }
 }

@@ -1,46 +1,25 @@
 package com.cst2335.teamproject;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.google.android.material.navigation.NavigationView;
-
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
-public class MainActivity extends AppCompatActivity {
-
-        public void setContentView(int LayoutResID) {
-
-        View baseLayout = this.getLayoutInflater().inflate(R.layout.activity_base_with_drawer, (ViewGroup)null);
-        FrameLayout subclassLayout = (FrameLayout)baseLayout.findViewById(R.id.Frframe);
-        this.getLayoutInflater().inflate(LayoutResID, (ViewGroup)subclassLayout, true);
+public class BaseActivityWithDrawer extends AppCompatActivity {
+    public void setContentView(int layoutResID) {
+      /*  View baseLayout = this.getLayoutInflater().inflate(R.layout.activity_base_with_drawer, (ViewGroup)null);
+        FrameLayout subclassLayout = (FrameLayout)baseLayout.findViewById(R.id.base_frame);
+        this.getLayoutInflater().inflate(layoutResID, (ViewGroup)subclassLayout, true);
         super.setContentView(baseLayout);
         Toolbar tb = (Toolbar)this.findViewById(R.id.toolbar);
         this.setSupportActionBar(tb);
         View var10000 = this.findViewById(R.id.drawer_layout);
         final DrawerLayout drawer = (DrawerLayout)var10000;
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle((Activity)this, drawer, tb, R.string.open, R.string.close);
-        drawer.addDrawerListener((DrawerLayout.DrawerListener)toggle);
+        drawer.addDrawerListener((DrawerListener)toggle);
         toggle.syncState();
-        ((NavigationView)this.findViewById(R.id.navigation_view)).setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener)(new NavigationView.OnNavigationItemSelectedListener() {
+        ((NavigationView)this.findViewById(R.id.nav_view)).setNavigationItemSelectedListener((OnNavigationItemSelectedListener)(new OnNavigationItemSelectedListener() {
             public final boolean onNavigationItemSelected(@NotNull MenuItem it) {
                 switch(it.getItemId()) {
                     case R.id.nav_item_database:
-                        com.cst2335.teamproject.MainActivity.this.goToCarDatabase();
+                        BaseActivityWithDrawer.this.goToCarDatabase();
                     default:
                         drawer.closeDrawer(GravityCompat.START);
                         return true;
@@ -67,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private final void goToCarDatabase() {
-        Intent goToCarDatabase = new Intent((Context)this, com.cst2335.teamproject.HomePage.class);
+        Intent goToCarDatabase = new Intent((Context)this, HomePage.class);
         this.startActivity(goToCarDatabase);
-    }
-}
+    }*/
+}}

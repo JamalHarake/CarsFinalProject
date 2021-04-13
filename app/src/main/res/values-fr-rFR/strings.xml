@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarsByJamal</string>
+    <string name="hello_world">Bienvenue</string>
+    <string name="logo">Auto4Less</string>
+    <string name="description">Bienvenue à Auto4Less !</string>
+    <string name="hint">Entrer un modèle de voiture ici</string>
+    <string name="go">Aller</string>
+    <string name="view_your_saved_cars">Sauvegarde de voitures</string>
+    <string name="save_to_database">Sauvegarder dans la base de données</string>
+    <string name="buy">Acheter</string>
+    <string name="chatlog">Clavardage</string>
+    <string name="SendButton">Envoyer</string>
+    <string name="ReceiveButton">Recevoir</string>
+    <string name="Message">Ecrivez ici...</string>
+    <string name="view_details">Détails sur Google</string>
+    <string name="model_id">ID du modèle: </string>
+    <string name="make_id">Fabrication ID: </string>
+    <string name="t_about">À propos</string>
+    <string name="open" translatable="false" />
+    <string name="close" translatable="false" />
+    <string name="help"> Bienvenue dans la section Aide!
+        Vous pouvez mettre le mode que vous souhaitez rechercher dans le
+        barre de recherche. Vous pouvez maintenant cliquer sur les détails pour
+        avoir plus d\'informations sur la voiture. Vous pouvez aussi
+        ajoutez la voiture pour la revoir plus tard! Et si vous l\'avez aimé,
+        vous pouvez l\'acheter en cliquant simplement sur le bouton Acheter, qui
+        va vous diriger vers le lien Auto Trader.</string>
+    <string name="about" translatable="false">
+                    Jamal Harake.
+                    Étudiant à Algonquin College.
+                    Projet Finale Car Manufacture.
+                    2021-04-10.</string>
+</resources>
